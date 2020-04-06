@@ -6,7 +6,7 @@ Fear not! These assessments aren't meant to be tricky - they're just here to mak
 project week! Furthermore, you can consider the weekly assessments effectively a review guide of the basic concepts we learned that week in class.
 
 ### Assessment Schedule
-
+i did
 | Week | Week Type | Assessment |
 | --- | ---------------- | ------------------ |
 | 1 | Lesson (Front-End) | [Link](https://github.com/WDI-SEA/wdi_assessments/blob/master/weekly_assessments/w01-assessment.md) |
