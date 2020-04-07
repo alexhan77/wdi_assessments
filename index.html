@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-<h1 id="results" value="number" type="number"></h1>
-<form>
-    <input type="button" onclick="decrementValue()" value="-"/>
-    <input type="text" id="number" value="0"/>
-    <input type="button" onclick="incrementValue()" value="+" />
-</form>
-<script src="main.js"></script>
+    <div class="container">
+        <div id="display">0</div>
+        <form>
+            <input type="button" id="subtract" value="-" />
+            <input type="text" id="input" value="1" />
+            <input type="button" id="add" value="+" />
+        </form>
+    </div>
+    <script src="main.js"></script>
 </body>
+
 </html>
-
-

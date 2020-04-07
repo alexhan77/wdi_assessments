@@ -2,3 +2,7 @@ body {
     background-color: peachpuff;
     text-align: center;
 }
+#display {
+    background-color: peachpuff;
+    font-size: 2em;
+}
