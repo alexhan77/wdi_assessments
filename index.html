@@ -1,24 +1,34 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculate</title>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <div id="display">0</div>
-        <form>
-            <input type="button" id="subtract" value="-" />
-            <input type="text" id="input" value="1" />
-            <input type="button" id="add" value="+" />
-        </form>
-    </div>
-    <script src="main.js"></script>
+
+  <h1>FtoC Temperature Converter</h1>
+<h2>Input Fahrenheit</h2>
+  <input type="text" id="fahrenheit" placeholder="Input Fahrenheit" name="far" value="" />
+<br>
+<br>
+
+<h3>Results in Celsius</h3>
+
+  <input type="text" id="celsius" placeholder="Celsius results" name="cel" value="" />
+<br>
+<br>
+  <button id="convert">Calculate</button>
+  <br>
+  <button id="clear">Reset</button>
+
+  <script src="main.js"></script>
+
 </body>
 
 </html>

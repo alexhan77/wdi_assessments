@@ -1,58 +1,32 @@
-var sub = document.getElementById('subtract')
-var add = document.getElementById('add')
-var num = document.getElementById('input')
+document.getElementById('convert').onclick = tempConvert;
+document.getElementById('clear').onclick = resetButton;
 
-var display = document.getElementById('display')
-var total = 0
-// displayNumber functions 
 
-// subtract button function
-// subtract the input number from the display number 
-// add button function
 
-function subtract() {
+function tempConvert() {
+    
+    var fahrenheit = document.getElementById("fahrenheit").value;
+    var celsius = document.getElementById("celsius").value;
 
-    total = total - num.value
-    // console.log(total)
-    display.innerHTML = total
-
-}
-sub.addEventListener('click', subtract)
-
-function addition() {
-
-    total = total + parseInt(num.value)
-    // console.log(total)
-    display.innerHTML = total
-}
-add.addEventListener('click', addition)
-
-// function displayNumber()
-// {
-//     var z = document.getElementById('results').innerHTML;
-//     document.getElementById('results').innerHTML = 0;
-// }
-
-// function incrementValue()
-// {
-//     var value = parseInt(document.getElementById('number').value, 0);
-//     // value = isNaN(value) ? 0 : value;
-//     value++;
-//     document.getElementById('number').value = value;
-//     // document.getElementById('number').addEventListener('click', incrementValue)
-
-//     // console.log(value) 
-// }
-// function decrementValue()
-// {
-//     var value = parseInt(document.getElementById('number').value, 0);
-//     // value = isNaN(value) ? 0 : value;
-//     value--;
-//     document.getElementById('number').value = value;
-//     // document.getElementById('number').addEventListener('click', decrementValue)
-//     // console.log(value)
-// }
-// // decrementValue();
-// // incrementValue();
-// displayNumber();
-
+    // parseFloat returns a string into a number
+    // parseFloat used for decimals as well
+  if (fahrenheit != '') {
+        celsius = (parseFloat(fahrenheit) - 32) / 1.8;
+    } 
+        // TODO: displaying the numbers to from fToC 
+        // without .toFixed(2) displays with multiple decimal points
+        // TODO: lower the decimal points to like 14.54 instead of 14.55555555555 (example)
+        // .toFixed(1) displays the to the one decimal point
+        document.getElementById('celsius').value = parseFloat(celsius).toFixed(2);
+        // TODO: diplays from cToF
+        // document.getElementById('fahrenheit').value = parseFloat(fahrenheit).toFixed(2);
+    }
+    // TODO: create a clearfunction 
+    function resetButton() {
+            document.getElementById('fahrenheit').value = '';
+            document.getElementById('celsius').value = '';
+        } 
+        
+        
+        
+        

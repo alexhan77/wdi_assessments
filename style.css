@@ -1,0 +1,27 @@
+body {
+    background-color: wheat; 
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+    /* size: 4em; */
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Comic Neue', cursive;
+}
+
+h2 { 
+    font-family: 'Comic Neue', cursive;
+    color: crimson;
+    text-align: center;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: 'Comic Neue', cursive;
+    color: skyblue;
+    text-align: center;
+    font-size: 2em;
+}
