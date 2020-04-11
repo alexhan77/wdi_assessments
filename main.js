@@ -1,7 +1,7 @@
 document.getElementById('convert').onclick = tempConvert;
 document.getElementById('clear').onclick = resetButton;
-
-
+document.getElementById('fahrenheit').defaultValue = "32";
+document.getElementById('celsius').defaultValue = "0";
 
 function tempConvert() {
     
